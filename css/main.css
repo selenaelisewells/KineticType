@@ -1,0 +1,130 @@
+.hidden {
+    display: none;
+}
+
+.type-wrapper {
+    width: 540px;
+    border: thin solid black;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+svg {
+    width: 100%;
+}
+
+.project-header {
+    margin: 30px 0 10px;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.project-subhead {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+
+.questionIcon {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    height: 175px;
+    opacity: 0;
+}
+
+.controls {
+    text-align: center;
+}
+
+.controls button {
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 1.5em;
+    border-radius: 1em;
+}
+
+.text-anim {
+    animation: fadewords .1s forwards;
+}
+
+.container-turn {
+    animation: turncontainer 0.2s linear 1s forwards;
+    animation-delay: 4.5s;
+}
+
+.questionIcon-anim {
+    animation: questionAnim 1.5s forwards;
+    animation-delay: 4.2s;
+}
+
+#text1 path {
+    opacity: 0;
+}
+
+
+/* #Hey,
+#ahhh,
+#y-you,
+#doing,
+#okay {
+    animation: fadewords .1s forwards;
+} */
+
+
+/* #text1 {
+    animation: turncontainer 0.2s linear 1s forwards;
+} */
+
+#Hey {
+    animation-delay: 2.5s;
+}
+
+#ahhh {
+    animation-delay: 2.55s;
+}
+
+#y-you {
+    animation-delay: 3s;
+}
+
+#doing {
+    animation-delay: 3.5s;
+}
+
+#okay {
+    animation-delay: 3.55s;
+}
+
+@keyframes fadewords {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes turncontainer {
+    100% {
+        transform: rotate(90deg) scale(5);
+        opacity: 0;
+    }
+}
+
+@keyframes questionAnim {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    80% {
+        transform: scale(2);
+        opacity: 1;
+        top: auto;
+        left: auto;
+    }
+}
