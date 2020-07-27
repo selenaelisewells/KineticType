@@ -12,6 +12,7 @@
 
 svg {
     width: 100%;
+    background-color: burlywood;
 }
 
 .project-header {
@@ -64,20 +65,6 @@ svg {
     opacity: 0;
 }
 
-
-/* #Hey,
-#ahhh,
-#y-you,
-#doing,
-#okay {
-    animation: fadewords .1s forwards;
-} */
-
-
-/* #text1 {
-    animation: turncontainer 0.2s linear 1s forwards;
-} */
-
 #Hey {
     animation-delay: 2.5s;
 }
@@ -128,3 +115,6 @@ svg {
         left: auto;
     }
 }
+
+
+/* text2 animation start */
