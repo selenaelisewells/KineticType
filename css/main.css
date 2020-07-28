@@ -4,6 +4,7 @@
 
 .type-wrapper {
     width: 540px;
+    height: 540px;
     border: thin solid black;
     margin: 0 auto;
     overflow: hidden;
@@ -117,7 +118,7 @@ path {
 /* start of line3 animations */
 
 #_3-1 {
-    animation-delay: 0s;
+    animation-delay: 3s;
 }
 
 #_3-2 {

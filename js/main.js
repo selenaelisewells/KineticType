@@ -44,7 +44,7 @@
         },
         {
             index: 8,
-            time: 10000,
+            time: 20000,
             svgWrap: document.querySelector('#Line-9')
         },
         {
