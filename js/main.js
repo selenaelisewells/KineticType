@@ -3,33 +3,66 @@
         playButton = document.querySelector('.controls button');
 
     const animations = [{
-            time: 5000,
+            index: 0,
+            endTime: 5000,
             svgWrap: document.querySelector('#Line-1')
         },
         {
-            time: 6000,
+            index: 1,
+            endTime: 7790,
             svgWrap: document.querySelector('#Line-2')
         },
         {
-            time: 7000,
+            index: 2,
+            endTime: 13000,
             svgWrap: document.querySelector('#Line-3')
         },
         {
-            time: 8000,
+            index: 3,
+            endtime: 15000,
             svgWrap: document.querySelector('#Line-4')
         },
         {
-            time: 9000,
+            index: 4,
+            time: 16000,
             svgWrap: document.querySelector('#Line-5')
         },
         {
-            time: 10000,
+            index: 5,
+            time: 17000,
             svgWrap: document.querySelector('#Line-6')
         },
         {
-            time: 11000,
+            index: 6,
+            time: 18000,
             svgWrap: document.querySelector('#Line-7')
         },
+        {
+            index: 7,
+            time: 19000,
+            svgWrap: document.querySelector('#Line-8')
+        },
+        {
+            index: 8,
+            time: 10000,
+            svgWrap: document.querySelector('#Line-9')
+        },
+        {
+            index: 9,
+            time: 21000,
+            svgWrap: document.querySelector('#Line-10')
+        },
+        {
+            index: 10,
+            time: 22000,
+            svgWrap: document.querySelector('#Line-11')
+        },
+        {
+            index: 11,
+            time: 23000,
+            svgWrap: document.querySelector('#Line-12')
+        },
+
 
     ]
 
@@ -38,18 +71,52 @@
 
     function playAudio() {
         document.querySelectorAll('path').forEach(path => path.classList.add('text-anim'));
-        document.querySelector('#text1').classList.add("container-turn");
+        document.querySelector('.svgWrap').classList.add("container-turn");
         document.querySelector(".questionIcon").classList.add("questionIcon-anim");
         audio.play();
         registerTimeout();
     }
 
-    function registerTimeout() {
-        animations.forEach(animation => {
-            setTimeout(() => {
-                animation.svgWrap.classList.toggle("hidden")
+    //[https://medium.com/@swainson/accurate-javascript-timers-f71e0af5df32](Article explaining)
+    function accuTime(timer, max, repeatArgument, callbackArgument) {
+        var counter = 1;
 
-            }, animation.time)
+        var init = (t) => {
+            let timeStart = new Date().getTime();
+            setTimeout(function() {
+                if (counter < max) {
+                    let fix = (new Date().getTime() - timeStart) - timer;
+                    init(t - fix);
+                    counter++;
+
+                    // event to be repeated max times
+                    repeatArgument();
+
+                } else {
+                    // event to be executed at animation end
+                    callbackArgument();
+                }
+            }, t);
+        }
+        init(timer);
+    }
+
+
+    function registerTimeout() {
+        animations.forEach((animation) => {
+            // debugger;
+            accuTime(animation.endTime, 1, null, () => {
+                console.log(animation.index)
+
+                animation.svgWrap.classList.toggle("hidden");
+
+                if (animation[animation.index + 1]) {
+                    animation[animation.index + 1].svgWrap.classList.toggle("hidden");
+                }
+
+
+
+            }, animation.endTime)
         })
     }
 
