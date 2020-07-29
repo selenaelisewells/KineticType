@@ -2,6 +2,12 @@
     let audio = document.querySelector('audio'),
         playButton = document.querySelector('.controls button');
 
+    document.querySelector('.stop').addEventListener('click', event => {
+        audio.pause();
+        audio.currentTime = 0;
+        window.location.reload();
+    });
+
     const animations = [{
             index: 0,
             endTime: 5000,
@@ -19,55 +25,52 @@
         },
         {
             index: 3,
-            endtime: 15000,
+            endTime: 15000,
             svgWrap: document.querySelector('#Line-4')
         },
         {
             index: 4,
-            time: 16000,
+            endTime: 16000,
             svgWrap: document.querySelector('#Line-5')
         },
         {
             index: 5,
-            time: 17000,
+            endTime: 17000,
             svgWrap: document.querySelector('#Line-6')
         },
         {
             index: 6,
-            time: 18000,
+            endTime: 18000,
             svgWrap: document.querySelector('#Line-7')
         },
         {
             index: 7,
-            time: 19000,
+            endTime: 19000,
             svgWrap: document.querySelector('#Line-8')
         },
         {
             index: 8,
-            time: 20000,
+            endTime: 20000,
             svgWrap: document.querySelector('#Line-9')
         },
         {
             index: 9,
-            time: 21000,
+            endTime: 21000,
             svgWrap: document.querySelector('#Line-10')
         },
         {
             index: 10,
-            time: 22000,
+            endTime: 22000,
             svgWrap: document.querySelector('#Line-11')
         },
         {
             index: 11,
-            time: 23000,
+            endTime: 23000,
             svgWrap: document.querySelector('#Line-12')
         },
 
 
-    ]
-
-
-
+    ];
 
     function playAudio() {
         document.querySelectorAll('path').forEach(path => path.classList.add('text-anim'));
@@ -77,45 +80,20 @@
         registerTimeout();
     }
 
-    //[https://medium.com/@swainson/accurate-javascript-timers-f71e0af5df32](Article explaining)
-    function accuTime(timer, max, repeatArgument, callbackArgument) {
-        var counter = 1;
-
-        var init = (t) => {
-            let timeStart = new Date().getTime();
-            setTimeout(function() {
-                if (counter < max) {
-                    let fix = (new Date().getTime() - timeStart) - timer;
-                    init(t - fix);
-                    counter++;
-
-                    // event to be repeated max times
-                    repeatArgument();
-
-                } else {
-                    // event to be executed at animation end
-                    callbackArgument();
-                }
-            }, t);
-        }
-        init(timer);
-    }
-
-
     function registerTimeout() {
-        animations.forEach((animation) => {
-            // debugger;
-            accuTime(animation.endTime, 1, null, () => {
-                console.log(animation.index)
+        const svgWraps = document.querySelectorAll('.svgWrap');
+        // Functional approach
+        animations.forEach(animation => {
+            setTimeout(() => {
+                // Set all svgWrap to hidden
+                svgWraps.forEach(
+                    svgWrap => svgWrap.classList.add('hidden')
+                );
 
-                animation.svgWrap.classList.toggle("hidden");
-
-                if (animation[animation.index + 1]) {
-                    animation[animation.index + 1].svgWrap.classList.toggle("hidden");
+                // If we have a next animation show it
+                if (animations[animation.index + 1] !== null) {
+                    animations[animation.index + 1].svgWrap.classList.remove('hidden');
                 }
-
-
-
             }, animation.endTime)
         })
     }
