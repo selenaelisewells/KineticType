@@ -1,32 +1,57 @@
+body {
+    background: linear-gradient(#ffeeee, #ab3c3c);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+main {
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 2fr;
+    grid-gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#section1 {
+    padding: 50px;
+    background-color: rgb(255, 255, 255, 0.25);
+    border-radius: 0px 0px 15px 15px;
+    padding-top: 100px;
+    height: 400px;
+}
+
 .hidden {
     display: none;
 }
 
 .type-wrapper {
-    width: 540px;
-    height: 540px;
-    border: thin solid black;
-    margin: 0 auto;
+    width: 500px;
+    /* height: 540px; */
+    margin: 2em auto;
     overflow: hidden;
     position: relative;
 }
 
 svg {
     width: 100%;
-    background-color: burlywood;
+    animation: turncontainer;
 }
 
 .project-header {
-    margin: 30px 0 10px;
-    font-size: 3em;
-    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 10px 0 10px; */
+    font-size: 2.5em;
+    font-family: 'Anton', sans-serif;
     text-align: center;
 }
 
 .project-subhead {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Anton', sans-serif;
     text-align: center;
     font-size: 2em;
+    padding: 5px;
 }
 
 .questionIcon {
@@ -34,18 +59,34 @@ svg {
     bottom: 50px;
     right: 50px;
     height: 175px;
+    width: auto;
     opacity: 0;
 }
 
 .controls {
     text-align: center;
+    margin-top: 2em;
 }
 
 .controls button {
-    padding: 20px;
+    padding: 20px 30px;
     cursor: pointer;
-    margin-top: 1.5em;
+    margin: 1.5em;
     border-radius: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    box-shadow: 0 6px #ab3c3c;
+    background: #cb4e4e;
+    color: #fff;
+}
+
+.controls button:hover {
+    background: #e65d5d;
+    box-shadow: 0 4px #ab3c3c;
+}
+
+.controls button:focus {
+    outline: none;
 }
 
 .text-anim {
@@ -66,6 +107,9 @@ path {
     opacity: 0;
 }
 
+
+/* doing okay */
+
 #Hey {
     animation-delay: 2.15s;
 }
@@ -85,6 +129,9 @@ path {
 #okay {
     animation-delay: 4s;
 }
+
+
+/* start of line 2 - i kinda know how you feel */
 
 #i {
     animation-delay: 1s;
@@ -115,42 +162,42 @@ path {
 }
 
 
-/* start of line3 animations */
+/* start of line3 animations - no you dont...*/
 
 #_3-1 {
-    animation-delay: 3s;
+    animation-delay: .14s;
 }
 
 #_3-2 {
-    animation-delay: .3s;
+    animation-delay: .18s;
 }
 
 #_3-3 {
-    animation-delay: .5s;
+    animation-delay: .27s;
 }
 
 #_3-4 {
-    animation-delay: .8s;
+    animation-delay: .6s;
 }
 
 #_3-5 {
-    animation-delay: 1s;
+    animation-delay: .8s;
 }
 
 #_3-6 {
-    animation-delay: 1.2s;
+    animation-delay: 1s;
 }
 
 #_3-7 {
-    animation-delay: 1.4s;
+    animation-delay: 1.2s;
 }
 
 #_3-8 {
-    animation-delay: 1.6s;
+    animation-delay: 1.4s;
 }
 
 #_3-9 {
-    animation-delay: 1.7s;
+    animation-delay: 1.6s;
 }
 
 #_3-10 {
@@ -158,27 +205,27 @@ path {
 }
 
 #_3-11 {
-    animation-delay: 1.9s;
+    animation-delay: 2s;
 }
 
 #_3-12 {
-    animation-delay: 2.5s;
+    animation-delay: 2.2s;
 }
 
 #_3-13 {
-    animation-delay: 2.7s;
+    animation-delay: 2.4s;
 }
 
 #_3-14 {
-    animation-delay: 2.9s;
+    animation-delay: 2.6s;
 }
 
 #_3-15 {
-    animation-delay: 3.1s;
+    animation-delay: 2.8s;
 }
 
 #_3-16 {
-    animation-delay: 3.2s;
+    animation-delay: 3s;
 }
 
 #_3-17 {
@@ -205,7 +252,7 @@ path {
 /* end of line 3 animations */
 
 
-/* start of line 4 animations */
+/* start of line 4 animations - can i show you something */
 
 #_4-1 {
     animation-delay: 1s;
@@ -229,6 +276,698 @@ path {
 
 
 /* end of line 4 animations */
+
+
+/* start of line 5 animations - morty no offense */
+
+#_5-1 {
+    animation-delay: .1s;
+    /* morty*/
+}
+
+#_5-2 {
+    animation-delay: 0.2s;
+    /* no*/
+}
+
+#_5-3 {
+    animation-delay: 0.4s;
+    /* offense*/
+}
+
+#_5-4 {
+    animation-delay: 0.6s;
+    /* but*/
+}
+
+#_5-5 {
+    animation-delay: 0.8s;
+    /* a*/
+}
+
+#_5-6 {
+    animation-delay: 1s;
+    /* drawing*/
+}
+
+#_5-7 {
+    animation-delay: 1.1s;
+    /* you*/
+}
+
+#_5-8 {
+    animation-delay: 1.15s;
+    /* made*/
+}
+
+#_5-9 {
+    animation-delay: 1.2s;
+    /* of*/
+}
+
+#_5-10 {
+    animation-delay: 1.25s;
+    /* me*/
+}
+
+#_5-11 {
+    animation-delay: 1.4s;
+    /* when */
+}
+
+#_5-12 {
+    animation-delay: 1.8s;
+    /* you*/
+}
+
+#_5-13 {
+    animation-delay: 2s;
+    /* were*/
+}
+
+#_5-14 {
+    animation-delay: 2.2s;
+    /* 8*/
+}
+
+#_5-15 {
+    animation-delay: 2.4s;
+    /* isnt*/
+}
+
+#_5-16 {
+    animation-delay: 2.6s;
+    /* going*/
+}
+
+#_5-17 {
+    animation-delay: 2.8s;
+    /* to*/
+}
+
+#_5-18 {
+    animation-delay: 3s;
+    /* make*/
+}
+
+#_5-19 {
+    animation-delay: 3.2s;
+    /* me*/
+}
+
+#_5-20 {
+    animation-delay: 3.3s;
+    /* feel*/
+}
+
+#_5-21 {
+    animation-delay: 3.4s;
+    /* like*/
+}
+
+#_5-22 {
+    animation-delay: 3.5s;
+    /* less*/
+}
+
+#_5-23 {
+    animation-delay: 3.6s;
+    /* of*/
+}
+
+#_5-24 {
+    animation-delay: 3.7s;
+    /* an*/
+}
+
+#_5-25 {
+    animation-delay: 3.8s;
+    /* accident*/
+}
+
+
+/* start of line 6 - thats my grave */
+
+#_6-1 {
+    animation-delay: .3s;
+}
+
+#_6-2 {
+    animation-delay: .5s;
+}
+
+#_6-3 {
+    animation-delay: .7s;
+}
+
+#_6-4 {
+    animation-delay: 1.5s;
+}
+
+#_6-5 {
+    animation-delay: 1.65s;
+}
+
+#_6-6 {
+    animation-delay: 1.8s;
+}
+
+#grave {
+    animation-delay: 2s;
+}
+
+
+/* start of animation 8 */
+
+#_8-1 {
+    animation-delay: .5s;
+    /* on */
+}
+
+#_8-2 {
+    animation-delay: .6s;
+    /* one */
+}
+
+#_8-3 {
+    animation-delay: .7s;
+    /* of */
+}
+
+#_8-4 {
+    animation-delay: .8s;
+    /* our */
+}
+
+#_8-5 {
+    animation-delay: 1s;
+    /* adventures */
+}
+
+#_8-6 {
+    animation-delay: 1.2s;
+    /* rick*/
+}
+
+#_8-7 {
+    animation-delay: 1.4s;
+    /* and*/
+}
+
+#_8-9 {
+    animation-delay: 1.8s;
+    /* i */
+}
+
+#_8-10 {
+    animation-delay: 2s;
+    /* basically*/
+}
+
+#_8-11 {
+    animation-delay: 2.1s;
+    /* destroyed */
+}
+
+#boom {
+    animation-delay: 2.2s;
+}
+
+#_8-12 {
+    animation-delay: 2.3s;
+    /* the */
+}
+
+#_8-13 {
+    animation-delay: 3s;
+    /* whole*/
+}
+
+#_8-14 {
+    animation-delay: 3.2s;
+    /* world */
+}
+
+#_8-15 {
+    animation-delay: 4s;
+    /* so */
+}
+
+#_8-16 {
+    animation-delay: 4.17s;
+    /* we */
+}
+
+#_8-17 {
+    animation-delay: 4.25s;
+    /* bailed */
+}
+
+#_8-18 {
+    animation-delay: 5s;
+    /* on*/
+}
+
+#_8-19 {
+    animation-delay: 5.1s;
+    /* that */
+}
+
+#_8-20 {
+    animation-delay: 5.4s;
+    /* reality */
+}
+
+#_8-21 {
+    animation-delay: 5.8s;
+    /* and*/
+}
+
+#_8-22 {
+    animation-delay: 6s;
+    /* we*/
+}
+
+#_8-23 {
+    animation-delay: 6.1s;
+    /* came */
+}
+
+#_8-24 {
+    animation-delay: 6.2s;
+    /*to */
+}
+
+#_8-25 {
+    animation-delay: 6.3s;
+    /* this */
+}
+
+#_8-26 {
+    animation-delay: 6.4s;
+    /* one */
+}
+
+#_8-27 {
+    animation-delay: 7s;
+    /* because */
+}
+
+#_8-28 {
+    animation-delay: 7.2s;
+    /* in */
+}
+
+#_8-29 {
+    animation-delay: 7.4s;
+    /*this */
+}
+
+#_8-30 {
+    animation-delay: 7.6s;
+    /* one*/
+}
+
+#_8-31 {
+    animation-delay: 8s;
+    /* the */
+}
+
+#_8-32 {
+    animation-delay: 8.2s;
+    /* world */
+}
+
+#_8-33 {
+    animation-delay: 8.4s;
+    /* wasnt */
+}
+
+#_8-34 {
+    animation-delay: 8.6s;
+    /* destroyed */
+}
+
+#_8-35 {
+    animation-delay: 9.2s;
+    /* & */
+}
+
+#_8-36 {
+    animation-delay: 9.4s;
+    /* in */
+}
+
+#_8-37 {
+    animation-delay: 9.6s;
+    /* this */
+}
+
+#_8-38 {
+    animation-delay: 9.8s;
+    /* one */
+}
+
+#_8-39 {
+    animation-delay: 10s;
+    /* we */
+}
+
+#_8-40 {
+    animation-delay: 10.2s;
+    /* were */
+}
+
+#_8-41 {
+    animation-delay: 10.25s;
+    /* dead */
+}
+
+
+/* start of line 9 */
+
+#_9-1 {
+    animation-delay: 0.2s;
+    /*so*/
+}
+
+#_9-2 {
+    animation-delay: 0.4s;
+    /*we*/
+}
+
+#_9-3 {
+    animation-delay: 0.6s;
+    /*came*/
+}
+
+#_9-4 {
+    animation-delay: 0.8s;
+    /*here*/
+}
+
+#_9-5 {
+    animation-delay: 1.13s;
+    /*and*/
+}
+
+#_9-6 {
+    animation-delay: 1.8s;
+    /*we*/
+}
+
+#_9-7 {
+    animation-delay: 2s;
+    /*barried*/
+}
+
+#dig {
+    animation-delay: 2.1s;
+}
+
+#_9-8 {
+    animation-delay: 2.2s;
+    /*ourselves*/
+}
+
+#_9-9 {
+    animation-delay: 2.4s;
+    /*and*/
+}
+
+#_9-10 {
+    animation-delay: 2.6s;
+    /*we*/
+}
+
+#_9-11 {
+    animation-delay: 2.8s;
+    /*took*/
+}
+
+#_9-12 {
+    animation-delay: 3s;
+    /*their*/
+}
+
+#_9-13 {
+    animation-delay: 3.2s;
+    /*place*/
+}
+
+
+/* start of line 10 */
+
+#_10-1 {
+    animation-delay: 0.2s;
+}
+
+#_10-2 {
+    animation-delay: 0.4s;
+}
+
+#_10-3 {
+    animation-delay: 0.6s;
+}
+
+#_10-4 {
+    animation-delay: 0.8s;
+}
+
+#_10-5 {
+    animation-delay: 1.1s;
+}
+
+#_10-6 {
+    animation-delay: 1.2s;
+}
+
+#_10-7 {
+    animation-delay: 1.4s;
+}
+
+#_10-8 {
+    animation-delay: 1.6s;
+}
+
+#_10-9 {
+    animation-delay: 2.1s;
+}
+
+#_10-10 {
+    animation-delay: 3.5s;
+}
+
+#_10-11 {
+    animation-delay: 4s;
+}
+
+#_10-12 {
+    animation-delay: 4.25s;
+}
+
+#_10-13 {
+    animation-delay: 4.75s;
+}
+
+#_10-14 {
+    animation-delay: 5s;
+}
+
+#corps {
+    animation-delay: 5.1s;
+}
+
+
+/* start of line 11 */
+
+#_11-1 {
+    animation-delay: .4s;
+    /*so*/
+}
+
+#_11-2 {
+    animation-delay: 1s;
+    /*youre*/
+}
+
+#_11-3 {
+    animation-delay: 1.2s;
+    /*not*/
+}
+
+#_11-4 {
+    animation-delay: 1.4s;
+    /*my */
+}
+
+#_11-5 {
+    animation-delay: 1.6s;
+    /*brother*/
+}
+
+#_11-6 {
+    animation-delay: 2s;
+    /*im*/
+}
+
+#_11-7 {
+    animation-delay: 2.2s;
+    /*better*/
+}
+
+#_11-8 {
+    animation-delay: 2.4s;
+    /*than*/
+}
+
+#_11-9 {
+    animation-delay: 2.6s;
+    /*your*/
+}
+
+#_11-10 {
+    animation-delay: 2.8s;
+    /*brother*/
+}
+
+#_11-12 {
+    animation-delay: 3s;
+    /*im*/
+}
+
+#_11-13 {
+    animation-delay: 3s;
+    /*im*/
+}
+
+#_11-14 {
+    animation-delay: 3.2s;
+    /*a*/
+}
+
+#_11-11 {
+    animation-delay: 3.4s;
+    /*version*/
+}
+
+#_11-15 {
+    animation-delay: 3.8s;
+    /*your*/
+}
+
+#_11-16 {
+    animation-delay: 4s;
+    /*brother*/
+}
+
+#_11-17 {
+    animation-delay: 4.2s;
+    /*you*/
+}
+
+#_11-18 {
+    animation-delay: 4.4s;
+    /*can*/
+}
+
+#_11-19 {
+    animation-delay: 4.6s;
+    /*trust*/
+}
+
+#_11-20 {
+    animation-delay: 4.8s;
+    /*when*/
+}
+
+#_11-21 {
+    animation-delay: 5s;
+    /*he*/
+}
+
+#_11-22 {
+    animation-delay: 5.2s;
+    /*says*/
+}
+
+#_11-23 {
+    animation-delay: 5.4s;
+    /*dont*/
+}
+
+#_11-24 {
+    animation-delay: 5.6s;
+    /**/
+}
+
+#_11-25 {
+    animation-delay: 6s;
+    /*run*/
+}
+
+
+/* start of line 12 */
+
+#_12-1 {
+    animation-delay: .07s;
+}
+
+#_12-2 {
+    animation-delay: .2s;
+}
+
+#_12-3 {
+    animation-delay: .5s;
+}
+
+#_12-4 {
+    animation-delay: .8s;
+}
+
+#_12-5 {
+    animation-delay: 1.2s;
+}
+
+#_12-6 {
+    animation-delay: 2.2s;
+}
+
+#_12-7 {
+    animation-delay: 2.4s;
+}
+
+#_12-8 {
+    animation-delay: 3s;
+}
+
+#_12-9 {
+    animation-delay: 3.3s;
+}
+
+#_12-10 {
+    animation-delay: 3.7s;
+}
+
+#_12-11 {
+    animation-delay: 4s;
+}
+
+#_12-12 {
+    animation-delay: 5s;
+}
+
+#_12-13 {
+    animation-delay: 5.5s;
+}
+
+#_12-14 {
+    animation-delay: 6s;
+}
+
+#tv {
+    animation-delay: 6.1s;
+}
 
 @keyframes fadewords {
     0% {

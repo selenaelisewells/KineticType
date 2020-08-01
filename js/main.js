@@ -30,42 +30,42 @@
         },
         {
             index: 4,
-            endTime: 16000,
+            endTime: 19000,
             svgWrap: document.querySelector('#Line-5')
         },
         {
             index: 5,
-            endTime: 17000,
+            endTime: 22100,
             svgWrap: document.querySelector('#Line-6')
         },
         {
             index: 6,
-            endTime: 18000,
+            endTime: 24000,
             svgWrap: document.querySelector('#Line-7')
         },
         {
             index: 7,
-            endTime: 19000,
+            endTime: 35000,
             svgWrap: document.querySelector('#Line-8')
         },
         {
             index: 8,
-            endTime: 20000,
+            endTime: 39000,
             svgWrap: document.querySelector('#Line-9')
         },
         {
             index: 9,
-            endTime: 21000,
+            endTime: 45000,
             svgWrap: document.querySelector('#Line-10')
         },
         {
             index: 10,
-            endTime: 22000,
+            endTime: 52000,
             svgWrap: document.querySelector('#Line-11')
         },
         {
             index: 11,
-            endTime: 23000,
+            endTime: 60000,
             svgWrap: document.querySelector('#Line-12')
         },
 
@@ -74,7 +74,7 @@
 
     function playAudio() {
         document.querySelectorAll('path').forEach(path => path.classList.add('text-anim'));
-        document.querySelector('.svgWrap').classList.add("container-turn");
+        // document.querySelectorAll('.svgWrap').forEach(svg => svg.classList.add("container-turn"));
         document.querySelector(".questionIcon").classList.add("questionIcon-anim");
         audio.play();
         registerTimeout();
