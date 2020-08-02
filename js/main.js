@@ -8,6 +8,8 @@
         window.location.reload();
     });
 
+    const CONTAINER_TURN_LENGTH = 200;
+
     const animations = [{
             index: 0,
             endTime: 5000,
@@ -30,7 +32,7 @@
         },
         {
             index: 4,
-            endTime: 19000,
+            endTime: 19500,
             svgWrap: document.querySelector('#Line-5')
         },
         {
@@ -74,7 +76,6 @@
 
     function playAudio() {
         document.querySelectorAll('path').forEach(path => path.classList.add('text-anim'));
-        // document.querySelectorAll('.svgWrap').forEach(svg => svg.classList.add("container-turn"));
         document.querySelector(".questionIcon").classList.add("questionIcon-anim");
         audio.play();
         registerTimeout();
@@ -85,17 +86,22 @@
         // Functional approach
         animations.forEach(animation => {
             setTimeout(() => {
-                // Set all svgWrap to hidden
-                svgWraps.forEach(
-                    svgWrap => svgWrap.classList.add('hidden')
-                );
+                animation.svgWrap.classList.add('container-turn');
 
-                // If we have a next animation show it
-                if (animations[animation.index + 1] !== null) {
-                    animations[animation.index + 1].svgWrap.classList.remove('hidden');
-                }
-            }, animation.endTime)
-        })
+                setTimeout(() => {
+                    svgWraps.forEach(
+                        svgWrap => svgWrap.classList.add('hidden')
+                    );
+                    // Set all svgWrap to hidden
+
+                    // If we have a next animation show it
+                    if (animations[animation.index + 1] !== null) {
+                        animations[animation.index + 1].svgWrap.classList.remove('hidden');
+                    }
+                }, CONTAINER_TURN_LENGTH);
+
+            }, animation.endTime - CONTAINER_TURN_LENGTH);
+        });
     }
 
 

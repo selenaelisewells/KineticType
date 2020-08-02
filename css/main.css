@@ -37,7 +37,6 @@ main {
 
 svg {
     width: 100%;
-    animation: turncontainer;
 }
 
 .project-header {
@@ -90,12 +89,12 @@ svg {
 }
 
 .text-anim {
-    animation: fadewords .1s forwards;
+    animation: fadewords .5s forwards;
 }
 
 .container-turn {
-    animation: turncontainer 0.2s linear 1s forwards;
-    animation-delay: 4.5s;
+    animation: turncontainer 0.2s linear forwards;
+    /* animation-delay: 4.5s; */
 }
 
 .questionIcon-anim {
@@ -409,31 +408,42 @@ path {
 /* start of line 6 - thats my grave */
 
 #_6-1 {
-    animation-delay: .3s;
-}
-
-#_6-2 {
     animation-delay: .5s;
 }
 
-#_6-3 {
+#_6-2 {
     animation-delay: .7s;
 }
 
+#_6-3 {
+    animation-delay: .9s;
+}
+
 #_6-4 {
-    animation-delay: 1.5s;
+    animation-delay: 1.7s;
 }
 
 #_6-5 {
-    animation-delay: 1.65s;
-}
-
-#_6-6 {
     animation-delay: 1.8s;
 }
 
-#grave {
+#_6-6 {
     animation-delay: 2s;
+}
+
+#grave {
+    animation-delay: 2.1s;
+}
+
+
+/* start of line 7 */
+
+#_7-1 {
+    animation-delay: .5s;
+}
+
+#_7-2 {
+    animation-delay: 1s;
 }
 
 
