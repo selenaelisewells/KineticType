@@ -149,7 +149,7 @@ path {
 }
 
 #you {
-    animation-delay: 1.9s;
+    animation-delay: 1.8s;
 }
 
 #feel {
@@ -157,7 +157,7 @@ path {
 }
 
 #summer {
-    animation-delay: 2.3s;
+    animation-delay: 2.2s;
 }
 
 
@@ -290,7 +290,7 @@ path {
 }
 
 #_5-3 {
-    animation-delay: 0.4s;
+    animation-delay: .4s;
     /* offense*/
 }
 
@@ -495,7 +495,7 @@ path {
 }
 
 #_8-11 {
-    animation-delay: 2.1s;
+    animation-delay: 2.2s;
     /* destroyed */
 }
 
@@ -504,7 +504,7 @@ path {
 }
 
 #_8-12 {
-    animation-delay: 2.3s;
+    animation-delay: 2.6s;
     /* the */
 }
 
@@ -730,58 +730,72 @@ path {
 
 #_10-1 {
     animation-delay: 0.2s;
+    /*and*/
 }
 
 #_10-2 {
     animation-delay: 0.4s;
+    /*every*/
 }
 
 #_10-3 {
     animation-delay: 0.6s;
+    /*morning*/
 }
 
 #_10-4 {
     animation-delay: 0.8s;
+    /*summer*/
 }
 
 #_10-5 {
     animation-delay: 1.1s;
+    /*i*/
 }
 
 #_10-6 {
     animation-delay: 1.2s;
+    /*eat*/
 }
 
 #_10-7 {
     animation-delay: 1.4s;
+    /*breakfast*/
 }
 
 #_10-8 {
-    animation-delay: 1.6s;
+    animation-delay: 2s;
+    /*20yrds*/
 }
 
 #_10-9 {
-    animation-delay: 2.1s;
+    animation-delay: 2.5s;
+    /*away*/
 }
 
 #_10-10 {
     animation-delay: 3.5s;
+    /*from*/
 }
 
 #_10-11 {
     animation-delay: 4s;
+    /*my*/
 }
 
 #_10-12 {
     animation-delay: 4.25s;
+    /*own*/
 }
 
 #_10-13 {
     animation-delay: 4.75s;
+    /*rotting*/
 }
 
 #_10-14 {
     animation-delay: 5s;
+    /*corps*/
 }
 
 #corps {
@@ -797,22 +811,22 @@ path {
 }
 
 #_11-2 {
-    animation-delay: 1s;
+    animation-delay: 1.1s;
     /*youre*/
 }
 
 #_11-3 {
-    animation-delay: 1.2s;
+    animation-delay: 1.3s;
     /*not*/
 }
 
 #_11-4 {
-    animation-delay: 1.4s;
+    animation-delay: 1.5s;
     /*my */
 }
 
 #_11-5 {
-    animation-delay: 1.6s;
+    animation-delay: 1.7s;
     /*brother*/
 }
 
@@ -822,92 +836,92 @@ path {
 }
 
 #_11-7 {
-    animation-delay: 2.2s;
+    animation-delay: 2.3s;
     /*better*/
 }
 
 #_11-8 {
-    animation-delay: 2.4s;
+    animation-delay: 2.5s;
     /*than*/
 }
 
 #_11-9 {
-    animation-delay: 2.6s;
+    animation-delay: 2.7s;
     /*your*/
 }
 
 #_11-10 {
-    animation-delay: 2.8s;
+    animation-delay: 2.9s;
     /*brother*/
 }
 
 #_11-12 {
-    animation-delay: 3s;
+    animation-delay: 3.3s;
     /*im*/
 }
 
 #_11-13 {
-    animation-delay: 3s;
+    animation-delay: 3.3s;
     /*im*/
 }
 
 #_11-14 {
-    animation-delay: 3.2s;
+    animation-delay: 3.6s;
     /*a*/
 }
 
 #_11-11 {
-    animation-delay: 3.4s;
+    animation-delay: 3.8s;
     /*version*/
 }
 
 #_11-15 {
-    animation-delay: 3.8s;
+    animation-delay: 4s;
     /*your*/
 }
 
 #_11-16 {
-    animation-delay: 4s;
+    animation-delay: 4.2s;
     /*brother*/
 }
 
 #_11-17 {
-    animation-delay: 4.2s;
+    animation-delay: 4.4s;
     /*you*/
 }
 
 #_11-18 {
-    animation-delay: 4.4s;
+    animation-delay: 4.6s;
     /*can*/
 }
 
 #_11-19 {
-    animation-delay: 4.6s;
+    animation-delay: 4.8s;
     /*trust*/
 }
 
 #_11-20 {
-    animation-delay: 4.8s;
+    animation-delay: 5s;
     /*when*/
 }
 
 #_11-21 {
-    animation-delay: 5s;
+    animation-delay: 5.2s;
     /*he*/
 }
 
 #_11-22 {
-    animation-delay: 5.2s;
+    animation-delay: 5.4s;
     /*says*/
 }
 
 #_11-23 {
-    animation-delay: 5.4s;
+    animation-delay: 5.6s;
     /*dont*/
 }
 
 #_11-24 {
-    animation-delay: 5.6s;
+    animation-delay: 5.8s;
     /**/
 }
 
@@ -921,58 +935,72 @@ path {
 
 #_12-1 {
     animation-delay: .07s;
+    /*nobody*/
 }
 
 #_12-2 {
     animation-delay: .2s;
+    /*exists*/
 }
 
 #_12-3 {
     animation-delay: .5s;
+    /*on*/
 }
 
 #_12-4 {
     animation-delay: .8s;
+    /*purpose*/
 }
 
 #_12-5 {
-    animation-delay: 1.2s;
+    animation-delay: 2s;
+    /*nobody*/
 }
 
 #_12-6 {
     animation-delay: 2.2s;
+    /*belongs*/
 }
 
 #_12-7 {
     animation-delay: 2.4s;
+    /*anywhere*/
 }
 
 #_12-8 {
     animation-delay: 3s;
+    /*everybody*/
 }
 
 #_12-9 {
     animation-delay: 3.3s;
+    /*going*/
 }
 
 #_12-10 {
     animation-delay: 3.7s;
+    /*to*/
 }
 
 #_12-11 {
     animation-delay: 4s;
+    /*die*/
 }
 
 #_12-12 {
     animation-delay: 5s;
+    /*come*/
 }
 
 #_12-13 {
     animation-delay: 5.5s;
+    /*watch*/
 }
 
 #_12-14 {
     animation-delay: 6s;
+    /*tv*/
 }
 
 #tv {
